@@ -1,0 +1,43 @@
+---
+import NavItem from './NavItem.astro';
+export interface Props {}
+
+const {} = Astro.props;
+---
+<nav class="main-nav">
+  <ul>
+    <NavItem
+      title="Home"
+      href="/"
+    ></NavItem>
+    <NavItem
+      title="Components"
+      href="/components"
+    >
+      <!-- COMPONENTS SUB NAV -->
+      <ul>
+        <NavItem
+          title="Buttons"
+          href="/components/buttons"
+        ></NavItem>
+        <NavItem
+          title="Cards"
+          href="/components/cards"
+        ></NavItem>
+        <NavItem
+          title="Headings"
+          href="/components/headings"
+        ></NavItem>
+        <NavItem
+          title="Lists"
+          href="/components/lists"
+        ></NavItem>
+        <NavItem
+          title="Tables"
+          href="/components/tables"
+        ></NavItem>
+      </ul>
+      <!-- END COMPONENTS SUB NAV -->
+    </NavItem>
+  </ul>
+</nav>

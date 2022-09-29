@@ -1,0 +1,19 @@
+---
+export interface Props {
+	title?: string;
+	img?: string;
+	classes?: string;
+}
+
+const { title, img, classes } = Astro.props;
+---
+<div class={ classes ? `card ${classes}` : `card ` }>
+	<div class="card-header">
+		{ img && <div class="card-img" style={`background-image:url(${img})`} ></div> }
+	</div>
+	<div class="card-body">
+		{ title && <div class="card-title faux-heading h4">{ title }</div> }
+		<slot/>
+	</div>
+	<div class="card-footer"></div>
+</div>

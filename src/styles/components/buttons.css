@@ -1,0 +1,78 @@
+a.btn, a.btn:visited, button.btn, input.btn, a.uu-btn, a.uu-btn:visited, button.uu-btn, input.uu-btn {
+  position: relative;
+  display: inline-block;
+  margin: 10px auto;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid;
+  border-color: var(--primary);
+  border-radius: 4px;
+  padding: 8px 20px;
+  transition: var(--base-transition);
+
+}
+a.btn:hover, a.btn:focus, a.btn:visited:hover, a.btn:visited:focus, button.btn:hover, button.btn:focus, input.btn:hover, input.btn:focus, a.uu-btn:hover, a.uu-btn:focus, a.uu-btn:visited:hover, a.uu-btn:visited:focus, button.uu-btn:hover, button.uu-btn:focus, input.uu-btn:hover, input.uu-btn:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--hover-shadow);
+}
+
+
+/* SIZES */
+a.btn.sm, a.btn.small, a.btn:visited.sm, a.btn:visited.small, button.btn.sm, button.btn.small, input.btn.sm, input.btn.small, a.uu-btn.sm, a.uu-btn.small, a.uu-btn:visited.sm, a.uu-btn:visited.small, button.uu-btn.sm, button.uu-btn.small, input.uu-btn.sm, input.uu-btn.small {
+  font-size: var(--small-font);
+  padding: 5px 15px;
+}
+a.btn.lg, a.btn.large, a.btn:visited.lg, a.btn:visited.large, button.btn.lg, button.btn.large, input.btn.lg, input.btn.large, a.uu-btn.lg, a.uu-btn.large, a.uu-btn:visited.lg, a.uu-btn:visited.large, button.uu-btn.lg, button.uu-btn.large, input.uu-btn.lg, input.uu-btn.large {
+  font-size: var(--large-font);
+  padding: 12px 26px;
+}
+a.btn.xl, a.btn.extra-large, a.btn:visited.xl, a.btn:visited.extra-large, button.btn.xl, button.btn.extra-large, input.btn.xl, input.btn.extra-large, a.uu-btn.xl, a.uu-btn.extra-large, a.uu-btn:visited.xl, a.uu-btn:visited.extra-large, button.uu-btn.xl, button.uu-btn.extra-large, input.uu-btn.xl, input.uu-btn.extra-large {
+  font-size: var(--large-font);
+  padding: 15px 30px;
+}
+
+/* COLORS */
+a.btn.black, a.btn:visited.black, button.btn.black, input.btn.black, a.uu-btn.black, a.uu-btn:visited.black, button.uu-btn.black, input.uu-btn.black {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+a.btn.gray, a.btn:visited.gray, button.btn.gray, input.btn.gray, a.uu-btn.gray, a.uu-btn:visited.gray, button.uu-btn.gray, input.uu-btn.gray {
+  background-color: var(--gray);
+  border-color: var(--gray);
+}
+a.btn.white, a.btn:visited.white, button.btn.white, input.btn.white, a.uu-btn.white, a.uu-btn:visited.white, button.uu-btn.white, input.uu-btn.white {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--primary);
+}
+
+/* GHOST */
+a.btn.ghost, a.btn:visited.ghost, button.btn.ghost, input.btn.ghost, a.uu-btn.ghost, a.uu-btn:visited.ghost, button.uu-btn.ghost, input.uu-btn.ghost {
+  background-color: transparent !important;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+a.btn.black.ghost, a.btn:visited.black.ghost, button.btn.black.ghost, input.btn.black.ghost, a.uu-btn.black.ghost, a.uu-btn:visited.black.ghost, button.uu-btn.black.ghost, input.uu-btn.black.ghost {
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+a.btn.gray.ghost, a.btn:visited.gray.ghost, button.btn.gray.ghost, input.btn.gray.ghost, a.uu-btn.gray.ghost, a.uu-btn:visited.gray.ghost, button.uu-btn.gray.ghost, input.uu-btn.gray.ghost {
+  border: 2px solid var(--gray);
+  color: var(--gray);
+}
+a.btn.white.ghost, a.btn:visited.white.ghost, button.btn.white.ghost, input.btn.white.ghost, a.uu-btn.white.ghost, a.uu-btn:visited.white.ghost, button.uu-btn.white.ghost, input.uu-btn.white.ghost {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+/* FULL */
+a.btn.full, a.btn:visited.full, button.btn.full, input.btn.full, a.uu-btn.full, a.uu-btn:visited.full, button.uu-btn.full, input.uu-btn.full {
+  width: 100%;
+}

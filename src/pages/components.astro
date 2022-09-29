@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout title="Components">
+	<main class="page-main">
+    <section class="page-header">
+      <h1>Components</h1>
+      <p class="subhead">Elegant and extensible UI compponents for your webpages.</p>
+    </section>
+    <section>
+      <div class="flex-container col3">
+        <Button href="/components/buttons" classes="card-link">
+          <Card title="Buttons">
+            Quick, single subject component.
+          </Card>
+        </Button>
+        <Button href="/components/cards" classes="card-link">
+          <Card title="Cards">
+            Quick, single subject component.
+          </Card>
+        </Button>
+        <Button href="/components/headings" classes="card-link">
+          <Card title="Headings">
+            Quick, single subject component.
+          </Card>
+        </Button>
+      </div>
+    </section>
+	</main>
+</Layout>

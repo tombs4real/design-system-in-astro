@@ -1,0 +1,112 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import Code from '../../components/Code.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout title="Lists">
+	<main class="page-main">
+    <section class="page-header">
+      <div class="small text-primary bold">Components</div>
+      <h1>Lists</h1>
+      <p class="subhead">...</p>
+    </section>
+    <!-- BASIC LIST -->
+    <section>
+      <h2>
+        Basic Lists
+      </h2>
+      <p>
+        ...
+      </p>
+      <Card>
+        <div class="flex-container col2">
+          <ul>
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+
+          <ol>
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ol>
+        </div>
+      </Card>
+      <Code code={`
+  <div class="card ">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <div class="card-title faux-heading h4">Media Studies</div>
+      <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+      <a href="#" class="btn sm">Learn More</a>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+      `} />
+    </section>
+    <!-- END BASIC LIST -->
+
+    <!-- BULLET MODIFIERS -->
+    <section>
+      <h2>
+        Unordered List Bullet Modifiers
+      </h2>
+      <p>
+        ...
+      </p>
+      <Card>
+        <div class="flex-container col2">
+          <ul class="primary">
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+          <ul class="circle primary">
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+          <ul class="caret primary">
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+          <ul class="dash primary">
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+        </div>
+      </Card>
+    </section>
+    <!-- END BULLET MODIFIERS -->
+
+    <!-- BULLET MODIFIERS -->
+    <section>
+      <h2>
+        Unordered List Bullet Modifiers
+      </h2>
+      <p>
+        ...
+      </p>
+      <Card>
+        <div class="flex-container col2">
+          <ul class="block">
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+          <ul class="block striped">
+            <li>Criminal Law</li>
+            <li>Family and Gender / Sexuality Law</li>
+            <li>International Law</li>
+          </ul>
+        </div>
+      </Card>
+    </section>
+    <!-- END BULLET MODIFIERS -->
+	</main>
+</Layout>

@@ -1,0 +1,94 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import Code from '../../components/Code.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout title="Headings">
+	<main class="page-main">
+    <section class="page-header">
+      <div class="small text-primary bold">Components</div>
+      <h1>Headings</h1>
+      <p class="subhead">...</p>
+    </section>
+    <!-- BASIC HEADINGS -->
+		<section>
+      <h2>
+        Basic Headings
+      </h2>
+      <p>
+        ...
+      </p>
+      <div class="flex-container col1">
+          <Card>
+            <h1>Welcome to Undergraduate Studies</h1><br>
+            <h2>Understanding Your Curriculum</h2><br>
+            <h3>Virtual Campus Tours</h3><br>
+            <h4>Faculty & Staff</h4><br>
+            <h5>Student Groups</h5><br>
+            <h6>Resources</h6>
+          </Card>
+          <Code title="Code Examples">
+&lt;h1&gt;Welcome to Undergraduate Studies&lt;/h1&gt;
+
+&lt;h2&gt;Understanding Your Curriculum&lt;/h2&gt;
+
+&lt;h3&gt;Virtual Campus Tours&lt;/h3&gt;
+
+&lt;h4&gt;Faculty & Staff&lt;/h4&gt;
+
+&lt;h5&gt;Student Groups&lt;/h5&gt;
+
+&lt;h6&gt;Resources&lt;/h6&gt;
+  </Code>
+      </div>
+    </section>
+    <!-- END BASIC HEADINGS -->
+    <!-- HEADING COLORS -->
+		<section>
+      <h2>
+        Heading Colors
+      </h2>
+      <p>
+        ...
+      </p>
+      <div class="flex-container col1">
+          <Card>
+            <h1 class="primary">Welcome to Undergraduate Studies</h1><br>
+            <h2 class="gray">Understanding Your Curriculum</h2><br>
+          </Card>
+          <Code title="Code Examples">
+&lt;h1 class="primary"&gt;Welcome to Undergraduate Studies&lt;/h1&gt;
+
+&lt;h2 class="gray"&gt;Understanding Your Curriculum&lt;/h2&gt;
+  </Code>
+      </div>
+    </section>
+    <!-- END HEADING COLORS -->
+    <!-- ALT HEADINGS -->
+		<section>
+      <h2>
+        Alternate Headings
+      </h2>
+      <p>
+        ...
+      </p>
+      <div class="flex-container col1">
+          <Card>
+            <h1 class="alt">Welcome to Undergraduate Studies</h1><br>
+            <h2 class="alt primary">Understanding Your Curriculum</h2><br>
+            <h3 class="alt gray">Virtual Campus Tours</h3>
+          </Card>
+          <Code title="Code Examples">
+&lt;h1 class="alt"&gt;Welcome to Undergraduate Studies&lt;/h1&gt;
+
+&lt;h2 class="alt primary"&gt;Understanding Your Curriculum&lt;/h2&gt;
+
+&lt;h3 class="alt gray"&gt;Virtual Campus Tours&lt;/h3&gt;
+  </Code>
+      </div>
+    </section>
+    <!-- END ALT HEADINGS -->
+	</main>
+</Layout>

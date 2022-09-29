@@ -1,0 +1,228 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import Code from '../../components/Code.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout title="Cards">
+	<main class="page-main">
+    <section class="page-header">
+      <div class="small text-primary bold">Components</div>
+      <h1>Cards</h1>
+      <p class="subhead">Cards provide an extensible content container for a single subject. </p>
+    </section>
+    <!-- BASIC CARDS -->
+		<section>
+      <h2>
+        Basic Cards
+      </h2>
+      <p>
+        ...
+      </p>
+      <div class="flex-container col3">
+          <Card title="Media Studies">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm"
+            />
+          </Card>
+          <Card title="Media Studies">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm black ghost"
+            />
+          </Card>
+          <Card title="Media Studies">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm full"
+            />
+          </Card>
+          <Code code={`
+  <div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <div class="card-title faux-heading h4">Media Studies</div>
+      <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+      <a href="/path/to/page" class="btn sm">Learn More</a>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+          `} />
+      </div>
+    </section>
+    <!-- END BASIC CARDS -->
+     <!-- CARD COLORS -->
+		<section>
+      <h2>
+        Card Colors
+      </h2>
+      <p>
+        Cards provide an extensible content container for a single subject. Perfect for displaying a post or a series of posts.
+      </p>
+      <div class="flex-container col3">
+          <Card title="Media Studies" classes="primary">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm white"
+            />
+          </Card>
+          <Card title="Media Studies" classes="black">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm white ghost"
+            />
+          </Card>
+          <Card title="Media Studies" classes="gray">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm black"
+            />
+          </Card>
+          <Code code={`
+  <div class="card primary">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <div class="card-title faux-heading h4">Media Studies</div>
+      <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+      <a href="/path/to/page" class="btn sm">Learn More</a>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+
+  <div class="card black">
+    ...
+  </div>
+
+  <div class="card gray">
+    ...
+  </div>
+          `} />
+      </div>
+    </section>
+    <!-- END CARD COLORS -->
+    <!-- IMAGE CARDS -->
+		<section>
+      <h2>
+        Image Cards
+      </h2>
+      <p>
+        Cards provide an extensible content container for a single subject. Perfect for displaying a post or a series of posts.
+      </p>
+      <div class="flex-container col3">
+          <Card title="Media Studies" img="https://brand.utah.edu/wp-content/uploads/sites/69/2022/06/20160831_UULIFESTYLE_0057-2048x1365.jpeg">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm"
+            />
+          </Card>
+          <Card title="Student Life" img="https://brand.utah.edu/wp-content/uploads/sites/69/2022/02/uu-photography-example1.jpg">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm black ghost"
+            />
+          </Card>
+          <Code code={`
+  <div class="card">
+    <div class="card-header">
+      <div class="card-img" style="background-image:url'(/path/to/file.jpg')"></div>  
+    </div>
+    <div class="card-body">
+      <div class="card-title faux-heading h4">Media Studies</div>
+      <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+      <a href="/path/to/page" class="btn sm">Learn More</a>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+          `} />
+      </div>
+    </section>
+    <!-- END IMAGE CARDS -->
+    <!-- ALT CARDS -->
+		<section>
+      <h2>
+        Alternate Cards
+      </h2>
+      <p>
+        Cards provide an extensible content container for a single subject. Perfect for displaying a post or a series of posts.
+      </p>
+      <div class="flex-container">
+          <Card title="Media Studies" classes="left" img="https://brand.utah.edu/wp-content/uploads/sites/69/2022/06/20160831_UULIFESTYLE_0057-2048x1365.jpeg">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm"
+            />
+          </Card>
+          <Card title="Student Life" classes="right" img="https://brand.utah.edu/wp-content/uploads/sites/69/2022/02/uu-photography-example1.jpg">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm black ghost"
+            />
+          </Card>
+          <Card title="Media Studies" classes="primary left diag" img="https://brand.utah.edu/wp-content/uploads/sites/69/2022/06/20160831_UULIFESTYLE_0057-2048x1365.jpeg">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm white"
+            />
+          </Card>
+          <Card title="Student Life" classes="black right diag" img="https://brand.utah.edu/wp-content/uploads/sites/69/2022/02/uu-photography-example1.jpg">
+            <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+            <Button 
+              title="Learn More"
+              href="#"
+              classes="btn sm"
+            />
+          </Card>
+          <Code code={`
+  <div class="card left">
+    <div class="card-header">
+      <div class="card-img" style="background-image:url'(/path/to/file.jpg')"></div>  
+    </div>
+    <div class="card-body">
+      <div class="card-title faux-heading h4">Media Studies</div>
+      <p>Media Studies minor courses examine the relationship of media to ethnicity, gender, race and social identity. </p>
+      <a href="/path/to/page" class="btn sm">Learn More</a>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+
+  <div class="card right">
+    ...
+  </div>
+
+  <div class="card primary left diag">
+    ...
+  </div>
+
+  <div class="card black right diag">
+    ...
+  </div>
+          `} />
+      </div>
+    </section>
+    <!-- END ALT CARDS -->
+	</main>
+</Layout>

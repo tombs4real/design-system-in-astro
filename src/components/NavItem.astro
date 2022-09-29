@@ -1,0 +1,13 @@
+---
+export interface Props {
+	title: string;
+	href: string;
+}
+
+const { title, href } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+<li>
+  <a class={pathname === href ? "active" : ""} href={href}>{title}</a>
+  <slot/>
+</li>

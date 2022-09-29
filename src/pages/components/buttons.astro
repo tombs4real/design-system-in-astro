@@ -1,0 +1,171 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import Button from '../../components/Button.astro';
+import Code from '../../components/Code.astro';
+---
+
+<Layout title="Buttons">
+	<main class="page-main">
+    <section class="page-header">
+      <div class="small text-primary bold">Components</div>
+      <h1>Buttons</h1>
+      <p class="subhead">...</p>
+    </section>
+    <!-- PRIMARY -->
+		<section>
+      <h2>Primary Buttons</h2>
+      <p>Primary buttons are U Red by default and can be used in 4 different sizes: small<code>.sm</code>, regular(default), large<code>.lg</code> and extra-large<code>.xl</code>.</p>
+      <div class="flex-container">
+      <Card>
+        <div class="flex-container justify-center align-center col4">
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn sm"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn lg"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn xl"
+            />
+          </div>
+        
+        </div>
+        </Card>
+        <Code code={`
+  <a href="/path/to/page" class="btn sm">Button Text</a>
+  <a href="/path/to/page" class="btn">Button Text</a>
+  <a href="/path/to/page" class="btn lg">Button Text</a>
+  <a href="/path/to/page" class="btn xl">Button Text</a>
+        `} />
+        </div>
+    </section>
+    <!-- END PRIMARY -->
+
+    <!-- COLORS -->
+		<section>
+      <h2>Alternate Button Colors</h2>
+      <p>In addition to the default U Red button, you can also choose between 3 other alternate colors to fit your UI needs; <code>.black</code>, <code>.gray</code> and <code>.white</code>.</p>
+      <div class="flex-container">
+      <Card>
+        <div class="flex-container justify-center align-center col4">
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn black"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn gray"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn white"
+            />
+          </div>
+        </div>
+        </Card>
+        <Code code={`
+  <a href="/path/to/page" class="btn black">Button Text</a>
+  <a href="/path/to/page" class="btn gray">Button Text</a>
+  <a href="/path/to/page" class="btn white">Button Text</a>
+        `} />
+        </div>
+    </section>
+    <!-- END COLORS -->
+
+    <!-- GHOST BTNS -->
+		<section>
+      <h2>Ghost Buttons</h2>
+      <p>Used primarily a secondary buttons, the ghost button can be used to soften the visual weight of priority buttons. <code>.ghost</code>(red), <code>.ghost .black</code>, <code>.ghost .gray</code> and <code>.ghost .white</code>(not shown).</p>
+      <div class="flex-container">
+      <Card>
+        <div class="flex-container justify-center align-center col4">
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn ghost"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn black ghost"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn gray ghost"
+            />
+          </div>
+        </div>
+        </Card>
+        <Code code={`
+  <a href="/path/to/page" class="btn ghost">Button Text</a>
+  <a href="/path/to/page" class="btn ghost black">Button Text</a>
+  <a href="/path/to/page" class="btn ghost gray">Button Text</a>
+      `} />
+      </div>
+    </section>
+    <!-- END GHOST BTNS -->
+    <!-- FULL BTNS -->
+		<section>
+      <h2>Full-Width Buttons</h2>
+      <p>Generally used sparingly and only in tight spaces. Full-width buttons <code>.full</code> will stretch the entire width of the parent container and can be used in any size and color.</p>
+      <div class="flex-container">
+      <Card>
+        <div class="flex-container justify-center align-center col2">
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn full"
+            />
+          </div>
+          <div>
+            <Button 
+              title="Button Text"
+              href="#"
+              classes="btn black ghost full"
+            />
+          </div>
+        </div>
+        </Card>
+        <Code code={`
+  <a href="/path/to/page" class="btn full">Button Text</a>
+  <a href="/path/to/page" class="btn ghost black full">Button Text</a>   
+        `} />
+      </div>
+    </section>
+    <!-- END FULL BTNS -->
+	</main>
+</Layout>
